@@ -1,14 +1,14 @@
-public class Main{
-    public static void main(String[] args){
+ public class Main {
+    public static void main(String[] args) {
 
         atv01 produtos = new atv01();
         produtos.name = "Placa mãe";
         produtos.quantidade = 37;
         produtos.preco = 780.99;
 
-        produtos.adicionarProduto( 10);
-        produtos.venderProduto(37);
-        produtos.venderProduto(57);
+//        produtos.adicionarProduto( 10);
+//        produtos.venderProduto(37);
+//        produtos.venderProduto(57);
 
 
         atv02 estudante1 = new atv02();
@@ -22,7 +22,15 @@ public class Main{
         estudante2.nota1 = 8.0;
         estudante2.nota2 = 7.0;
 
-        System.out.println(estudante1.nome + " tem média: " + estudante1.calculateAverage());
-        System.out.println(estudante2.nome + " tem média: " + estudante2.calculateAverage());
+
+//        System.out.println(estudante1.nome + " tem média: " + estudante1.calculateAverage());
+//        System.out.println(estudante2.nome + " tem média: " + estudante2.calculateAverage());
+
+        atv03 bond = new atv03();
+        bond.name = "Tesouro Selic";
+        bond.balance = 20000.00;
+        bond.buyBond(24); // Compra um título com prazo de 24 meses
+        bond.simulateInterest(); // Simula os juros por 24 meses
+
     }
 }

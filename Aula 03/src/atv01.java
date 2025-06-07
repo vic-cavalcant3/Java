@@ -9,10 +9,11 @@ public void adicionarProduto(int novoProduto ){
 
 public void venderProduto(int vendaDeProduto ){
     if(vendaDeProduto > quantidade){
-        System.out.println("Estoque insuficiente! Estoque atual: " + quantidade);
+        System.out.println("Estoque insuficiente! \n Estoque atual: " + quantidade);
     }else{
         quantidade -= vendaDeProduto;
-        System.out.println(vendaDeProduto +  " Unidades vendidas. Estoque restante: " + quantidade);
+        System.out.println(vendaDeProduto +  " Unidades vendidas. \n " +
+                "Estoque restante: " + quantidade);
     }
 
 
